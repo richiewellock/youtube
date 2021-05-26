@@ -98,14 +98,25 @@ a, a:hover {
   background-size: cover;
   -o-background-size: cover;
       margin-left: -4px;
+	background-attachment: none;
+}
+
+@media (min-width:768px) {
+
+  #header .bg-image-full {
+  background: no-repeat center center scroll;
+  background-size: cover;
+  -o-background-size: cover;
+      margin-left: -4px;
 	background-attachment: fixed;
+ }
 }
 
 #header p {margin:0 10%;}
 
 #header .text-box {
   position: relative;
-  padding:8rem 15%;
+  padding:10rem 15% 8rem;
 }
 
 /* Download Buttons */
@@ -168,11 +179,17 @@ a, a:hover {
   font-weight: bold;
 }
 
+@media (max-width:768px) { #testimonials h2 { font-size:1.8rem;}
+
+ }
+
 
 .testimonial-img {
   width: 10%;
   border-radius: 100%;
 }
+
+#testimonials p {font-size:0.9rem; margin:1rem 0;}
 
 
 
@@ -190,15 +207,15 @@ a, a:hover {
 }
 
 .carousel-item {
-  padding: 3% 15%;
+  padding: 3% 5%;
 }
 
 /* pricing */
 #stories {
-  padding: 100px;
+  padding: 3rem;
 }
 
-#stories .mb-auto{ margin-bottom:4% !important; font-size:0.85rem;}
+#stories .mb-auto{ width:70%;margin:0 auto; margin-bottom:4% !important; font-size:0.85rem;}
 
 #stories .mb-0 {font-size:1.5rem;}
 
@@ -214,6 +231,24 @@ a, a:hover {
 
 #cta .container-fluid {
   padding: 3% 15%;
+}
+
+@media (max-width:767px) {#cta h2 {font-size:1rem;}
+
+#cta .btn {font-size:0.8rem;}
+#header .text-box .btn {font-size:0.8rem;}
+#cta .container-fluid {
+  padding: 7% 15% 3%;
+}
+
+.gallery .container-fluid { padding:3% 10%
+}
+.gallery h1 {font-size:1.25rem; padding-top:4rem;}
+
+.col-sm-1 {width:50%; padding:0 5px;}
+#stories .mb-auto{ width:90%;margin:0 auto; margin-bottom:4% !important; font-size:0.9rem;}
+
+
 }
 
 .videos-container {padding:0% 20%;}
@@ -285,7 +320,7 @@ a, a:hover {
 
 @media (max-width:414px) {
   #header .text-box {font-size:80%; top:0;}
-  #header p {margin:0;padding-bottom:1rem;}
+  #header p {margin:0;padding-bottom:1rem; font-size:0.8rem;}
   .navbar-brand img {width:66%;}
 }
 
@@ -314,4 +349,5 @@ a, a:hover {
 
 #footer p {
   margin-top: 2%;
+}
 }
